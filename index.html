@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">ISS TRACKER</h1>
+        <div class="app">
+
+            <div class="loc">
+                <div class="loc__title">ISS is now located at:</div>
+                <div class="loc__pos">
+                    <div class="longitude"></div>
+                    <div class="latitude"></div>
+                </div>
+            </div>
+            <div class="time"><strong>Current UTC time:</strong> <span class="time__time"></span>
+                <span class="time__date"></span>
+            </div>
+            <div class="map" id="map"></div>
+            <div class="peoples">
+                <ul class="peoples__list"></ul>
+                <div class="peoples__count"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="moment/moment.js"></script>
+    <script src="app.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8I85OeQKxIzy1tIG5HJJ-t-ZWRbAH-l4&callback=initMap&v=weekly"
+        async></script>
+</body>
+
+</html>

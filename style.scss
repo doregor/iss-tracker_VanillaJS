@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: rgb(104, 105, 128);
+}
+.loc,
+.time,
+.map,
+.peoples {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgb(238, 224, 204);
+}
+.loc {
+    &__title {
+        font-weight: bold;
+    }
+    &__pos {
+        font-style: italic;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.peoples {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        & li {
+            border: 1px solid black;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: rgb(193, 212, 252);
+        }
+    }
+    &__count {
+        font-weight: bold;
+        padding: 10px;
+    }
+}
+
+
+.title {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/photo-1506318137071-a8e063b4bec0.jfif");
+}
+
