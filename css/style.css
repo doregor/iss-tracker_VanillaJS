@@ -7,28 +7,27 @@
 
 .app {
   margin: 0 auto;
-  width: 800px;
-  margin-top: 50px;
-  border: 2px solid black;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70% 30%;
       grid-template-columns: 70% 30%;
-  background-color: #686980;
+  background-color: #c2c2c2;
+  padding: 5px;
 }
 
 .loc,
 .time,
 .map,
 .peoples {
-  border: 1px solid black;
-  padding: 20px;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-  margin: 10px;
-  background-color: #eee0cc;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin: 5px;
+  background-color: #f0efef;
 }
 
 .loc__title {
@@ -36,12 +35,13 @@
 }
 
 .loc__pos {
-  font-style: italic;
+  color: #81b0e6;
+  font-weight: bold;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .peoples__list {
@@ -59,27 +59,31 @@
 }
 
 .peoples__list li {
-  border: 1px solid black;
-  padding: 5px 15px;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-  background-color: #c1d4fc;
+  color: white;
+  padding: 5px 10px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  font-size: 14px;
+  background-color: #81b0e6;
 }
 
 .peoples__count {
   font-weight: bold;
-  padding: 10px;
-}
-
-.title {
-  color: white;
-  padding-top: 20px;
-  text-align: center;
+  padding: 5px;
+  font-size: 14px;
 }
 
 .wrapper {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("../img/photo-1506318137071-a8e063b4bec0.jfif");
 }
 /*# sourceMappingURL=style.css.map */
